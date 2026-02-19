@@ -43,3 +43,13 @@ Möchte man z.B. auf IEEE-Zitierung umstellen (d.h. eine Literaturstelle wird mi
 ```
 
 Man muss allerdings vorher alle bereits von Latex erzeugten Dateien löschen.
+
+### Im Header soll nur der Autor stehen der das Kapitel geschrieben hat
+
+Vor dem Kapitel muss man dann
+
+
+```latex
+\renewcommand{\myauthor}{AUTOR1} 
+```
+eintragen
