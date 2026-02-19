@@ -53,3 +53,31 @@ Vor dem Kapitel muss man dann
 \renewcommand{\myauthor}{AUTOR1} 
 ```
 eintragen
+
+### Die Ränder der Seite sind zu groß (bzw. der Textbereich ist zu klein)
+
+In der Datei *template/preamble.tex* ist der Parameter *DIV* für die *Documentclass*, diesen verändern, z.B.:
+
+
+```latex
+\documentclass[%
+enabledeprecatedfontcommands,
+fontsize=\myfontsize,%% size of the main text
+paper=\mypapersize,  %% paper format
+parskip=\myparskip,  %% vertical space between paragraphs (instead of indenting first par-line)
+DIV=11,            %% calculates a good DIV value for type area; 66 characters/line is great
+headinclude=true,    %% is header part of margin space or part of page content?
+footinclude=false,   %% is footer part of margin space or part of page content?
+open=right,          %% "right" or "left": start new chapter on right or left page
+appendixprefix=true, %% adds appendix prefix; only for book-classes with \backmatter
+bibliography=totoc,  %% adds the bibliography to table of contents (without number)
+draft=\mydraft,      %% if true: included graphics are omitted and black boxes
+                     %%          mark overfull boxes in margin space
+BCOR=\myBCOR,        %% binding correction (depends on how you bind
+                     %% the resulting printout.
+%\mylaterality        %% oneside: document is not printed on left and right sides, only right side
+                     %% twoside: document is printed on left and right sides
+twoside = true
+]{scrbook}  %% article class of KOMA: "scrartcl", "scrreprt", or "scrbook".
+            %% CAUTION: If documentclass will be changed, *many* other things
+```   
