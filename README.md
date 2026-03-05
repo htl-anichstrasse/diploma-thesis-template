@@ -81,3 +81,11 @@ twoside = true
 ]{scrbook}  %% article class of KOMA: "scrartcl", "scrreprt", or "scrbook".
             %% CAUTION: If documentclass will be changed, *many* other things
 ```   
+### Die Abstände der Autoren auf der Titelseite sind nicht gleich
+
+Die Abstände können manuell eingetragen werden
+```latex
+AUTHOR1\\[0.3em]
+AUTHOR2\\[0.3em]
+AUTHOR3
+``` 
