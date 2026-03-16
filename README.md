@@ -88,4 +88,11 @@ Die Abstände können manuell eingetragen werden
 AUTHOR1\\[0.3em]
 AUTHOR2\\[0.3em]
 AUTHOR3
-``` 
+```
+### Wenn die Fußzeile zu weit oben ist 
+in *template/typographic_settings.tex* diese Zeile hinzufügen
+
+```latex
+\setlength{\footskip}{130pt}
+```
+oder auf die entsprechende Seite stellen und danach wieder auf den ursprünglichen Wert setzen
