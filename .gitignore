@@ -1,0 +1,54 @@
+# LaTeX-Hilfsdateien – gelten rekursiv in allen Unterordnern
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Weitere Verzeichnisse und Verzeichnisse
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# Beamer / Hyperref
+*.brf
+*.dvi
+*.xdv
+
+# Temporäre Dateien
+*.bak
+*.sav
+*.tmp
+*.tex~
+*~
+
+# Von latexmk erzeugte Verzeichnisse
+latex.out/
+build/
+
+# Editor-Dateien
+.vscode/
+.idea/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
